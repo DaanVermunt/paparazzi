@@ -31,6 +31,24 @@ Debian/Ubuntu packages:
 
 Recommended cross compiling toolchain: https://launchpad.net/gcc-arm-embedded
 
+Installation
+------------
+
+After cloning setup submodules:
+`git submodule init`
+`git submodule sync`
+`git submodule update`
+Build paparazzi:
+`make clean`
+`make`
+Select conf and control panel:
+`python start.py`
+then select: **userconf/tudelft/course2019\_conf.xml**
+then select: **userconf/tudelft/course2019\_control\_panel.xml**
+then click 'Set Active'
+Build OpenCV for the Bebop:
+Go to opencv\_bebop by : `cd sw/ext/opencv_bebop`
+Build by running `make`
 
 Directories quick and dirty description:
 ----------------------------------------
